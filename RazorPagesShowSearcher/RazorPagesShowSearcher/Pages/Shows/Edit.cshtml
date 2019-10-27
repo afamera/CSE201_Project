@@ -1,0 +1,70 @@
+﻿@page
+@model RazorPagesShowSearcher.Pages.Shows.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Show</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Show.ID" />
+            <div class="form-group">
+                <label asp-for="Show.ShowName" class="control-label"></label>
+                <input asp-for="Show.ShowName" class="form-control" />
+                <span asp-validation-for="Show.ShowName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Show.ShowDescription" class="control-label"></label>
+                <input asp-for="Show.ShowDescription" class="form-control" />
+                <span asp-validation-for="Show.ShowDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Show.ShowRate" class="control-label"></label>
+                <input asp-for="Show.ShowRate" class="form-control" />
+                <span asp-validation-for="Show.ShowRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Show.NumOfSeasons" class="control-label"></label>
+                <input asp-for="Show.NumOfSeasons" class="form-control" />
+                <span asp-validation-for="Show.NumOfSeasons" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Show.YearShowBegan" class="control-label"></label>
+                <input asp-for="Show.YearShowBegan" class="form-control" />
+                <span asp-validation-for="Show.YearShowBegan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Show.Genra" class="control-label"></label>
+                <input asp-for="Show.Genra" class="form-control" />
+                <span asp-validation-for="Show.Genra" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Show.ShowTitle" class="control-label"></label>
+                <input asp-for="Show.ShowTitle" class="form-control" />
+                <span asp-validation-for="Show.ShowTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Show.OriginalNetwork" class="control-label"></label>
+                <input asp-for="Show.OriginalNetwork" class="form-control" />
+                <span asp-validation-for="Show.OriginalNetwork" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

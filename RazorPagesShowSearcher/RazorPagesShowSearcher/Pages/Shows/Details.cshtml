@@ -1,0 +1,67 @@
+﻿@page
+@model RazorPagesShowSearcher.Pages.Shows.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Show</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.ShowName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.ShowName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.ShowDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.ShowDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.ShowRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.ShowRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.NumOfSeasons)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.NumOfSeasons)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.YearShowBegan)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.YearShowBegan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.Genra)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.Genra)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.ShowTitle)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.ShowTitle)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.OriginalNetwork)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.OriginalNetwork)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Show.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
