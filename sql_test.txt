@@ -1,0 +1,89 @@
+-----------------------------------------------------Home Page-----------------------------------------
+//Shows home page list by lastedit:
+select * from ShowsInfo
+Order by LastEdit;
+
+
+//by alphabet
+select * from ShowsInfo
+Order by Mname;
+
+//by alphabet
+select * from ShowsInfo
+Order by Mname DESC;
+
+
+
+
+ ----------------------------------------------------------search page------------------------------------ 
+//search a specfic movie (know name)
+select *
+from showsInfo
+where Showsname='shows1';
+
+
+//search a % movie (dont know the full name) please use ... when you cant remember
+select *
+from showsInfo
+where Showsname like 'sho%';
+
+
+
+----------------------------------------------------------details page------------------------------------
+//comment list
+select Comment.comment
+From Comment
+where Mname='shows1';
+
+
+//like or dislike
+select Thumbup,ThumbDown
+From Comment
+Where Mname='Comment'
+
+//after click
+update Comment SET Thumbup =Thumbup+1 
+update Comment SET Thumbup = Thumbdown+1
+
+
+//add to the favorite
+
+
+
+-----------------------------------------------------------------comment detail---------------------------------
+//overall comment
+slect count(*)
+From commentDetail
+Where Mname='shows1'
+Group by Comment detail;
+
+
+
+//newist list
+select*
+From CommentDetail
+Where Mname='shows1'
+order by time DESC;
+ 
+
+
+----------------------------------------------------add comment table, need Mame,editor, comment detial, time, 
+----------------------------------------------------------login Page---------------------------------------
+//Check password
+select * 
+from UserLogin 
+where "UserName" = "Tianyi" and "Password" = 12345;
+
+//create new account
+SET IDENTITY_INSERT UserProfile ON
+INSERT UserLogin(UserName,Password,Admin) Values('Binfang Ye',"yebinfang",0)
+SET IDENTITY_INSERT UserProfile OFF
+
+
+-----------------------------------------------------add movie photo------------------------------------------
+
+CREATE TABLE MyTable (
+   image  BLOB
+);
+ 
+INSERT INTO MyTable (image) VALUES(LOAD_FILE('/tmp/image.png'));
