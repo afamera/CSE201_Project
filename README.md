@@ -5,7 +5,7 @@ Hi all,
 This is the course project for CSE201, Miami University.
 Update by Bingfan Tian.
 
-Guys, please follow this page to download and initialize your visual studio to run our web application code.
+Guys, please follow this page to download and initialize your visual studio to run our web application code. Use your VS to run RazorPagesShowSearcher.sln file. It is in \RazorPagesShowSearcher.
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-3.0
 
 Then, you can download the git desktop to make pull and push process easier. Here is a link.
