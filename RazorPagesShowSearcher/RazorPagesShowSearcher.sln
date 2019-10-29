@@ -4,9 +4,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 <<<<<<< HEAD
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesShowSearcher", "RazorPagesShowSearcher\RazorPagesShowSearcher.csproj", "{7B55F560-ECF5-4DFD-8A6E-058FA1900A04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesShowSearcherTest", "RazorPagesShowSearcherTest\RazorPagesShowSearcherTest.csproj", "{14EAF5DE-4635-4948-B237-D613E9F57237}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesShowSearcher", "RazorPagesShowSearcher\RazorPagesShowSearcher.csproj", "{FDAE0634-4E5C-4331-A3D5-AB611131F779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesShowSearcherTest", "RazorPagesShowSearcherTest\RazorPagesShowSearcherTest.csproj", "{6C9B7781-D0AA-4211-91B0-3C106524C59D}"
+>>>>>>> e79211f24cb25ef52d56b73b73b989be66dcc697
 =======
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesShowSearcher", "RazorPagesShowSearcher\RazorPagesShowSearcher.csproj", "{FDAE0634-4E5C-4331-A3D5-AB611131F779}"
 EndProject
@@ -37,6 +43,9 @@ Global
 		{6C9B7781-D0AA-4211-91B0-3C106524C59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C9B7781-D0AA-4211-91B0-3C106524C59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C9B7781-D0AA-4211-91B0-3C106524C59D}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+>>>>>>> e79211f24cb25ef52d56b73b73b989be66dcc697
+=======
 >>>>>>> e79211f24cb25ef52d56b73b73b989be66dcc697
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
