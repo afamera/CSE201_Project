@@ -23,12 +23,14 @@ namespace RazorPagesShowSearcherTest
             db.Load();
             var s = new Show
             {
-                Country = "country1",
-                Id = "1",
-                Poster = "poster1",
-                Success = true,
-                Title = "title1",
-                Year = "2012"
+                ShowName = "showName",
+                ShowDescription = "abc",
+                ShowRating = "1",
+                NumberOfSeasons = "10",
+                yearShowBegan = "2012",
+                genre = "a",
+                showTitle = "title1",
+                originalNetwork = "a"
             };
             db.AddToFavorites(s);
             db.Dispose();
@@ -38,12 +40,14 @@ namespace RazorPagesShowSearcherTest
             var favs = db2.GetAllFavorites().ToArray();
             db2.Dispose();
             Assert.AreEqual(favs.Length, 1);
-            Assert.AreEqual(favs[0].Title, s.Title);
-            Assert.AreEqual(favs[0].Country, s.Country);
-            Assert.AreEqual(favs[0].Id, s.Id);
-            Assert.AreEqual(favs[0].Poster, s.Poster);
-            Assert.AreEqual(favs[0].Success, s.Success);
-            Assert.AreEqual(favs[0].Year, s.Year);
+            Assert.AreEqual(favs[0].ShowName, s.ShowName);
+            Assert.AreEqual(favs[0].ShowDescription, s.ShowDescription);
+            Assert.AreEqual(favs[0].ShowRating, s.ShowRating);
+            Assert.AreEqual(favs[0].NumberOfSeasons, s.NumberOfSeasons);
+            Assert.AreEqual(favs[0].yearShowBegan, s.yearShowBegan);
+            Assert.AreEqual(favs[0].genre, s.genre);
+            Assert.AreEqual(favs[0].showTitle, s.showTitle);
+            Assert.AreEqual(favs[0].originalNetworkr, s.originalNetwork);
             File.Delete("database.db");
         }
 
@@ -55,12 +59,15 @@ namespace RazorPagesShowSearcherTest
             db.Load();
             var s = new Show
             {
-                Country = "country1",
-                Id = "1",
-                Poster = "poster1",
-                Success = true,
-                Title = "title1",
-                Year = "2012"
+                ShowName = "showName",
+                ShowDescription = "abc",
+                ShowRating = "1",
+                NumberOfSeasons = "10",
+                yearShowBegan = "2012",
+                genre = "a",
+                showTitle = "title1",
+                originalNetwork = "a"
+                
             };
             db.AddToFavorites(s);
             db.Dispose();
@@ -86,7 +93,7 @@ namespace RazorPagesShowSearcherTest
             db.Load();
             var u = new User
             {
-                username = "user1",
+                userName = "user1",
                 password = "123456",
                 
             };
@@ -98,9 +105,78 @@ namespace RazorPagesShowSearcherTest
             var users = db2.GetAllUsers().ToArray();
             db2.Dispose();
             Assert.AreEqual(users.Length, 1);
-            Assert.AreEqual(users[0].username, u.username);
+            Assert.AreEqual(users[0].username, u.userName);
             Assert.AreEqual(users[0].password, u.password);
             File.Delete("database.db");
         }
+
+        [TestMethod]
+        public void TestAdminDelete()
+        {
+            File.Delete("database.db");
+            var db = new Database();
+            db.Load();
+            var s = new Show
+            {
+                ShowName = "showName",
+                ShowDescription = "abc",
+                ShowRating = "1",
+                NumberOfSeasons = "10",
+                yearShowBegan = "2012",
+                genre = "a",
+                showTitle = "title1",
+                originalNetwork = "a"
+
+            };
+            db.Dispose();
+            var admin = new Admin();
+            var shows = db.GetAllShows().ToArray();
+            admin.deleteShowInfo();
+            Assert.AreEqual(shows[0].Length, 0);
+            Assert.IsNull(shows[0].ShowName);
+            Assert.IsNull(shows[0].ShowDescription);
+            Assert.IsNull(shows[0].ShowRating);
+            Assert.IsNull(shows[0].NumberOfSeasons);
+            Assert.IsNull(shows[0].yearShowBegan);
+            Assert.IsNull(shows[0].genre);
+            Assert.IsNull(shows[0].showTitle);
+            Assert.IsNull(shows[0].originalNetwork);
+            File.Delete("database.db");
+        }
+
+        [TestMethod]
+        public void TestAdminEdit()
+        {
+            File.Delete("database.db");
+            var db = new Database();
+            db.Load();
+            var s = new Show
+            {
+                ShowName = "showName",
+                ShowDescription = "abc",
+                ShowRating = "1",
+                NumberOfSeasons = "10",
+                yearShowBegan = "2012",
+                genre = "a",
+                showTitle = "title1",
+                originalNetwork = "a"
+
+            };
+            db.Dispose();
+            var admin = new Admin();
+            var shows = db.GetAllShows().ToArray();
+            admin.editShowInfo(shows);
+            Assert.AreEqual(shows[0].Length, 1);
+            Assert.AreNotEqual(shows[0].ShowName, s.ShowName);
+            Assert.AreNotEqual(shows[0].ShowDescription, s.ShowDescription);
+            Assert.AreNotEqual(shows[0].ShowRating, s.ShowRating);
+            Assert.AreNotEqual(shows[0].NumberOfSeasons, s.NumberOfSeasons);
+            Assert.AreNotEqual(shows[0].yearShowBegan, s.yearShowBegan);
+            Assert.AreNotEqual(shows[0].genre, s.genre);
+            Assert.AreNotEqual(shows[0].showTitle, s.showTitle);
+            Assert.AreNotEqual(shows[0].originalNetwork, s.originalNetwork);
+            File.Delete("database.db");
+        }
     }
+
 }
