@@ -25,9 +25,7 @@ namespace RazorPagesShowSearcherTest
             {
                 Country = "country1",
                 Id = "1",
-                Plot = "plot1",
                 Poster = "poster1",
-                Showtime = "110 min",
                 Success = true,
                 Title = "title1",
                 Year = "2012"
@@ -43,9 +41,7 @@ namespace RazorPagesShowSearcherTest
             Assert.AreEqual(favs[0].Title, s.Title);
             Assert.AreEqual(favs[0].Country, s.Country);
             Assert.AreEqual(favs[0].Id, s.Id);
-            Assert.AreEqual(favs[0].Plot, s.Plot);
             Assert.AreEqual(favs[0].Poster, s.Poster);
-            Assert.AreEqual(favs[0].Runtime, s.Showtime);
             Assert.AreEqual(favs[0].Success, s.Success);
             Assert.AreEqual(favs[0].Year, s.Year);
             File.Delete("database.db");
@@ -61,9 +57,7 @@ namespace RazorPagesShowSearcherTest
             {
                 Country = "country1",
                 Id = "1",
-                Plot = "plot1",
                 Poster = "poster1",
-                Showtime = "110 min",
                 Success = true,
                 Title = "title1",
                 Year = "2012"
