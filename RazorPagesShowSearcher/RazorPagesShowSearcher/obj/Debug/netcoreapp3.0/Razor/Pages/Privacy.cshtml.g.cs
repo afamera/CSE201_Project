@@ -14,13 +14,27 @@ namespace RazorPagesShowSearcher.Pages
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\Skywa\Desktop\CSE201\CSE201_Project\RazorPagesShowSearcher\RazorPagesShowSearcher\Pages\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Skywa\Desktop\CSE201\CSE201_Project\RazorPagesShowSearcher\RazorPagesShowSearcher\Pages\_ViewImports.cshtml"
 using RazorPagesShowSearcher;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Skywa\Desktop\CSE201\CSE201_Project\RazorPagesShowSearcher\RazorPagesShowSearcher\Pages\_ViewImports.cshtml"
+using RazorPagesShowSearcher.Data;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a0906750319c55d6ce48b545e707c28c2eb4094c", @"/Pages/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"72c227fbe8885e35c81b37c805cc914d7f301332", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1d080d60d30924cf71539c604c2bbfae86fcdd4c", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Privacy : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998

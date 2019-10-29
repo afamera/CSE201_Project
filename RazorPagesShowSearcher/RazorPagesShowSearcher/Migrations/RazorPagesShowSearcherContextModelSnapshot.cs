@@ -26,25 +26,28 @@ namespace RazorPagesShowSearcher.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Genra")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
 
                     b.Property<int>("NumOfSeasons")
                         .HasColumnType("int");
 
                     b.Property<string>("OriginalNetwork")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
 
                     b.Property<string>("ShowDescription")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<string>("ShowName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
 
                     b.Property<double>("ShowRate")
                         .HasColumnType("float");
-
-                    b.Property<string>("ShowTitle")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("YearShowBegan")
                         .HasColumnType("int");
