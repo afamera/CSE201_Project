@@ -77,5 +77,30 @@ namespace RazorPagesShowSearcherTest
             Assert.AreEqual(favs.Length, 0);
             File.Delete("database.db");
         }
+
+        [TestMethod]
+        public void TestSignUp()
+        {
+            File.Delete("database.db");
+            var db = new Database();
+            db.Load();
+            var u = new User
+            {
+                username = "user1",
+                password = "123456",
+                
+            };
+            db.AddToUsers(u);
+            db.Dispose();
+
+            var db2 = new Database();
+            db2.Load();
+            var users = db2.GetAllUsers().ToArray();
+            db2.Dispose();
+            Assert.AreEqual(users.Length, 1);
+            Assert.AreEqual(users[0].username, u.username);
+            Assert.AreEqual(users[0].password, u.password);
+            File.Delete("database.db");
+        }
     }
 }
