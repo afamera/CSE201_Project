@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {}
+    "C:\\Users\\Angela Famera\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {
+    "C:\\Users\\Angela Famera\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
+        "projectUniqueName": "C:\\Users\\Angela Famera\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
         "projectName": "RazorPagesShowSearcher",
-        "projectPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
-        "packagesPath": "C:\\Users\\Skywa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\obj\\",
+        "projectPath": "C:\\Users\\Angela Famera\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
+        "packagesPath": "C:\\Users\\Angela Famera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Angela Famera\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Skywa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Angela Famera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
