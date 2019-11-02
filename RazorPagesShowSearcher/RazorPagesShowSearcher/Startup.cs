@@ -12,6 +12,7 @@ using RazorPagesShowSearcher.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ShowSearcher.Data;
 
 namespace RazorPagesShowSearcher
 {
@@ -34,8 +35,8 @@ namespace RazorPagesShowSearcher
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
 
-            services.AddDbContext<RazorPagesShowSearcherContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("RazorPagesShowSearcherContext")));
+            services.AddDbContext<ShowSearcherContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ShowSearcherContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -31,12 +31,17 @@ namespace RazorPagesShowSearcher.Models
 
         [Required]
         [StringLength(30)]
-        public string Genra { get; set; }
+        public string Genre { get; set; }
 
 
         [StringLength(60, MinimumLength = 3)]
-
+        [Required]
         public string OriginalNetwork { get; set; }
 
+        [Range(0, 0)]
+        public string numOfLike { get; set; }
+
+        [Range(0, 0)]
+        public string numOfDislike { get; set; }
     }
 }

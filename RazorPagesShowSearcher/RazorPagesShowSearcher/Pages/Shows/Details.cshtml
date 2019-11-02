@@ -1,5 +1,5 @@
 ﻿@page
-@model RazorPagesShowSearcher.DetailsModel
+@model RazorPagesShowSearcher.Pages.Shows.DetailsModel
 
 @{
     ViewData["Title"] = "Details";
@@ -42,16 +42,28 @@
             @Html.DisplayFor(model => model.Show.YearShowBegan)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Show.Genra)
+            @Html.DisplayNameFor(model => model.Show.Genre)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Show.Genra)
+            @Html.DisplayFor(model => model.Show.Genre)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Show.OriginalNetwork)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Show.OriginalNetwork)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.numOfLike)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.numOfLike)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.numOfDislike)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.numOfDislike)
         </dd>
     </dl>
 </div>

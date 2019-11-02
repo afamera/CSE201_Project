@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesShowSearcher.Models;
 
-namespace RazorPagesShowSearcher.Data
+namespace ShowSearcher.Data
 {
-    public class RazorPagesShowSearcherContext : DbContext
+    public class ShowSearcherContext : DbContext
     {
-        public RazorPagesShowSearcherContext (DbContextOptions<RazorPagesShowSearcherContext> options)
+        public ShowSearcherContext (DbContextOptions<ShowSearcherContext> options)
             : base(options)
         {
         }

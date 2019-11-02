@@ -17,8 +17,10 @@ namespace RazorPagesShowSearcher.Migrations
                     ShowRate = table.Column<double>(nullable: false),
                     NumOfSeasons = table.Column<int>(nullable: false),
                     YearShowBegan = table.Column<int>(nullable: false),
-                    Genra = table.Column<string>(maxLength: 30, nullable: false),
-                    OriginalNetwork = table.Column<string>(maxLength: 60, nullable: true)
+                    Genre = table.Column<string>(maxLength: 30, nullable: false),
+                    OriginalNetwork = table.Column<string>(maxLength: 60, nullable: false),
+                    numOfLike = table.Column<string>(nullable: true),
+                    numOfDislike = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

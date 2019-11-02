@@ -9,6 +9,6 @@
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
-    <WebStackScaffolding_DbContextTypeFullName>RazorPagesShowSearcher.Data.RazorPagesShowSearcherContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_DbContextTypeFullName>ShowSearcher.Data.ShowSearcherContext</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>
 </Project>

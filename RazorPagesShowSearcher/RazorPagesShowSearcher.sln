@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesShowSearcher", "RazorPagesShowSearcher\RazorPagesShowSearcher.csproj", "{7B55F560-ECF5-4DFD-8A6E-058FA1900A04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesShowSearcher", "RazorPagesShowSearcher\RazorPagesShowSearcher.csproj", "{448FF1F2-7FD8-45B9-822C-15CAD54E06BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B55F560-ECF5-4DFD-8A6E-058FA1900A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B55F560-ECF5-4DFD-8A6E-058FA1900A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B55F560-ECF5-4DFD-8A6E-058FA1900A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B55F560-ECF5-4DFD-8A6E-058FA1900A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448FF1F2-7FD8-45B9-822C-15CAD54E06BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448FF1F2-7FD8-45B9-822C-15CAD54E06BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448FF1F2-7FD8-45B9-822C-15CAD54E06BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448FF1F2-7FD8-45B9-822C-15CAD54E06BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {139B16E7-0FF1-4CC9-B2E8-0959DD1F4D30}
+		SolutionGuid = {6FCBA68B-C988-4610-9AAD-AAFA2E7C922D}
 	EndGlobalSection
 EndGlobal

@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using RazorPagesShowSearcher.Data;
 using RazorPagesShowSearcher.Models;
+using ShowSearcher.Data;
 
-namespace RazorPagesShowSearcher
+namespace RazorPagesShowSearcher.Pages.Shows
 {
     public class CreateModel : PageModel
     {
-        private readonly RazorPagesShowSearcher.Data.RazorPagesShowSearcherContext _context;
+        private readonly ShowSearcher.Data.ShowSearcherContext _context;
 
-        public CreateModel(RazorPagesShowSearcher.Data.RazorPagesShowSearcherContext context)
+        public CreateModel(ShowSearcher.Data.ShowSearcherContext context)
         {
             _context = context;
         }

@@ -2,17 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RazorPagesShowSearcher.Data;
+using ShowSearcher.Data;
 
 namespace RazorPagesShowSearcher.Migrations
 {
-    [DbContext(typeof(RazorPagesShowSearcherContext))]
-    [Migration("20191029222848_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(ShowSearcherContext))]
+    partial class ShowSearcherContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,7 +25,7 @@ namespace RazorPagesShowSearcher.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Genra")
+                    b.Property<string>("Genre")
                         .IsRequired()
                         .HasColumnType("nvarchar(30)")
                         .HasMaxLength(30);
@@ -36,6 +34,7 @@ namespace RazorPagesShowSearcher.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("OriginalNetwork")
+                        .IsRequired()
                         .HasColumnType("nvarchar(60)")
                         .HasMaxLength(60);
 
@@ -53,6 +52,12 @@ namespace RazorPagesShowSearcher.Migrations
 
                     b.Property<int>("YearShowBegan")
                         .HasColumnType("int");
+
+                    b.Property<string>("numOfDislike")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("numOfLike")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 

@@ -6,34 +6,35 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesShowSearcher.Data;
 using RazorPagesShowSearcher.Models;
+using ShowSearcher.Data;
 
 namespace RazorPagesShowSearcher.Pages.Shows
 {
     public class IndexModel : PageModel
     {
-        private readonly RazorPagesShowSearcher.Data.RazorPagesShowSearcherContext _context;
+        private readonly ShowSearcher.Data.ShowSearcherContext _context;
 
-        public IndexModel(RazorPagesShowSearcher.Data.RazorPagesShowSearcherContext context)
+        public IndexModel(ShowSearcher.Data.ShowSearcherContext context)
         {
             _context = context;
         }
 
-        public IList<Show> Show { get; set; }
+        public IList<Show> Shows { get;set; }
+
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
         // Requires using Microsoft.AspNetCore.Mvc.Rendering;
-        public SelectList Genras { get; set; }
+        public SelectList Genres { get; set; }
         [BindProperty(SupportsGet = true)]
-        public string ShowGenra { get; set; }
+        public string ShowGenre { get; set; }
 
         public async Task OnGetAsync()
         {
             // Use LINQ to get list of genres.
             IQueryable<string> genreQuery = from s in _context.Show
-                                            orderby s.Genra
-                                            select s.Genra;
+                                            orderby s.Genre
+                                            select s.Genre;
 
             // Show = await _context.Show.ToListAsync();
             var shows = from s in _context.Show
@@ -43,13 +44,13 @@ namespace RazorPagesShowSearcher.Pages.Shows
                 shows = shows.Where(s => s.ShowName.Contains(SearchString));
             }
 
-            if (!string.IsNullOrEmpty(ShowGenra))
+            if (!string.IsNullOrEmpty(ShowGenre))
             {
-                shows = shows.Where(x => x.Genra == ShowGenra);
+                shows = shows.Where(x => x.Genre == ShowGenre);
             }
 
-            Genras = new SelectList(await genreQuery.Distinct().ToListAsync());
-            Show = await shows.ToListAsync();
+            Genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+            Shows = await shows.ToListAsync();
         }
     }
 }

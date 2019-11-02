@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesShowSearcher.Data;
 using RazorPagesShowSearcher.Models;
+using ShowSearcher.Data;
 
-namespace RazorPagesShowSearcher
+namespace RazorPagesShowSearcher.Pages.Shows
 {
     public class EditModel : PageModel
     {
-        private readonly RazorPagesShowSearcher.Data.RazorPagesShowSearcherContext _context;
+        private readonly ShowSearcher.Data.ShowSearcherContext _context;
 
-        public EditModel(RazorPagesShowSearcher.Data.RazorPagesShowSearcherContext context)
+        public EditModel(ShowSearcher.Data.ShowSearcherContext context)
         {
             _context = context;
         }

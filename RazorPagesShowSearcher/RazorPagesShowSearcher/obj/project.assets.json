@@ -8477,11 +8477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
+      "projectUniqueName": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
       "projectName": "RazorPagesShowSearcher",
-      "projectPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
+      "projectPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
       "packagesPath": "C:\\Users\\Skywa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\obj\\",
+      "outputPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Skywa\\AppData\\Roaming\\NuGet\\NuGet.Config",
