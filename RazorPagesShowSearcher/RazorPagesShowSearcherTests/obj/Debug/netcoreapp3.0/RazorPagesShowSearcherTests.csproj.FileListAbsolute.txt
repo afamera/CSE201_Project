@@ -1,0 +1,3 @@
+C:\Users\LOL\Documents\GitHub\CSE201_Project\RazorPagesShowSearcher\RazorPagesShowSearcherTests\obj\Debug\netcoreapp3.0\RazorPagesShowSearcherTests.csprojAssemblyReference.cache
+C:\Users\LOL\Documents\GitHub\CSE201_Project\RazorPagesShowSearcher\RazorPagesShowSearcherTests\obj\Debug\netcoreapp3.0\RazorPagesShowSearcherTests.AssemblyInfoInputs.cache
+C:\Users\LOL\Documents\GitHub\CSE201_Project\RazorPagesShowSearcher\RazorPagesShowSearcherTests\obj\Debug\netcoreapp3.0\RazorPagesShowSearcherTests.AssemblyInfo.cs

@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {}
+    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {
+    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
+        "projectUniqueName": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
         "projectName": "RazorPagesShowSearcher",
-        "projectPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
-        "packagesPath": "C:\\Users\\Skywa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\obj\\",
+        "projectPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\RazorPagesShowSearcher.csproj",
+        "packagesPath": "C:\\Users\\LOL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\RazorPagesShowSearcher\\RazorPagesShowSearcher\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Skywa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\LOL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
