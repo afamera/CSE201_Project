@@ -12,7 +12,10 @@ namespace RazorPagesShowSearcher.Models.Tests
         [TestMethod()]
         public void addToFavoritesTest()
         {
-            Assert.True();
+            var favourite = new List<string>();
+            Account account = new Account();
+            account.addToFavorites("abc");
+            Assert.IsNotNull(favourite);
         }
        
 
