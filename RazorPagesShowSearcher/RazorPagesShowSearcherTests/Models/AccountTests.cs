@@ -6,9 +6,51 @@ using System.Text;
 
 namespace RazorPagesShowSearcher.Models.Tests
 {
+    
+    
     [TestClass()]
     public class AccountTests
     {
+
+
+        [TestMethod]
+        public void testId()
+        {
+            Account account = new Account();
+            account.ID = 1234;
+            Assert.AreEqual(expected: 1234, actual: account.ID);
+        }
+
+        public void testUserName()
+        {
+            Account account = new Account();
+            account.UserName = "admin";
+            Assert.AreEqual(expected: "admin", actual: account.UserName);
+        }
+
+        public void testPassword()
+        {
+            Account account = new Account();
+            account.Password = "password";
+            Assert.AreEqual(expected: "password", actual: account.Password);
+        }
+
+        public void testIsAdmin()
+        {
+            Account account = new Account();
+            account.IsAdmin = true;
+            Assert.IsTrue(account.IsAdmin);
+        }
+
+        public void testFavorte()
+        {
+            List<string> favorte = new List<string>();
+            favorte.Add("100");
+            List<string> actual = new List<string>();
+            actual.Add("100");
+            CollectionAssert.AreEqual(favorte,  actual);
+        }
+
         [TestMethod()]
         public void addToFavoritesTest()
         {
@@ -52,7 +94,7 @@ namespace RazorPagesShowSearcher.Models.Tests
         [TestMethod()]
         public void addShowInfoTest()
         {
-            string showInfo;
+            string showInfo = " ";
             Account account = new Account();
             account.addShowInfo("abc");
             Assert.AreEqual("abc", showInfo);
@@ -61,7 +103,7 @@ namespace RazorPagesShowSearcher.Models.Tests
         [TestMethod()]
         public void adeleteShowInfoTest()
         {
-            string showInfo;
+            string showInfo = " ";
             Account account = new Account();
             account.addShowInfo("abc");
             Assert.IsNotNull(showInfo);
@@ -72,7 +114,7 @@ namespace RazorPagesShowSearcher.Models.Tests
         [TestMethod()]
         public void editShowInfoTest()
         {
-            string showInfo;
+            string showInfo = " ";
             Account account = new Account();
             account.editShowInfo("abc");
             Assert.AreNotEqual("abc", showInfo);
