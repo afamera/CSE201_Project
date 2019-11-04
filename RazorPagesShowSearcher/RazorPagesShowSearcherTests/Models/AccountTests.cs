@@ -22,37 +22,61 @@ namespace RazorPagesShowSearcher.Models.Tests
         [TestMethod()]
         public void removeFromFavoritesTest()
         {
-            Assert.True();
+            var favourite = new List<string>();
+            Account account = new Account();
+            account.addToFavorites("abc");
+            Assert.IsNotNull(favourite);
+            account.removeFromFavorites("abc");
+            Assert.IsNull(favourite);
         }
 
         [TestMethod()]
         public void likeShowTest()
         {
-            Assert.True();
+            int like = 0;
+            Account account = new Account();
+            account.likeShow("abc");
+            Assert.AreEqual(1, like);
+            
         }
 
         [TestMethod()]
         public void dislikeShowTest()
         {
-            Assert.True();
+            int dislike = 0;
+            Account account = new Account();
+            account.dislikeShow("abc");
+            Assert.AreEqual(1, dislike);
         }
 
         [TestMethod()]
         public void addShowInfoTest()
         {
-            Assert.True();
+            string showInfo;
+            Account account = new Account();
+            account.addShowInfo("abc");
+            Assert.AreEqual("abc", showInfo);
         }
 
         [TestMethod()]
         public void adeleteShowInfoTest()
         {
-            Assert.True();
+            string showInfo;
+            Account account = new Account();
+            account.addShowInfo("abc");
+            Assert.IsNotNull(showInfo);
+            account.adeleteShowInfo("abc");
+            Assert.IsNull(showInfo);
         }
 
         [TestMethod()]
         public void editShowInfoTest()
         {
-            Assert.True();
+            string showInfo;
+            Account account = new Account();
+            account.editShowInfo("abc");
+            Assert.AreNotEqual("abc", showInfo);
+            
         }
     }
 }
