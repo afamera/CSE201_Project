@@ -31,7 +31,7 @@ namespace RazorPagesShowSearcher
                 Genre = "a",
                 OriginalNetwork = "a",
                 numOfLike = "0",
-
+                numOfDisLike = "0"
             };
             db.AddToFavorites(s);
             db.Dispose();
