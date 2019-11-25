@@ -1,0 +1,82 @@
+﻿@page
+@model ShowSearcher.Pages.Shows.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Show</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.ShowName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.ShowName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.ShowDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.ShowDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.ShowRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.ShowRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.NumOfSeasons)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.NumOfSeasons)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.YearShowBegan)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.YearShowBegan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.Genre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.Genre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.OriginalNetwork)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.OriginalNetwork)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.NumOfLike)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.NumOfLike)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.NumOfDislike)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.NumOfDislike)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Show.WikiLink)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Show.WikiLink)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Show.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
