@@ -1,9 +1,91 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {}
+    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {}
   },
   "projects": {
+    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
+        "projectName": "ShowSearcherTests",
+        "projectPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
+        "packagesPath": "C:\\Users\\LOL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LOL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
+                "projectPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
       "version": "1.0.0",
       "restore": {
