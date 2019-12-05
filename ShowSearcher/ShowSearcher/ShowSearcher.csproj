@@ -16,6 +16,14 @@
     <None Remove="新文件夹1\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Areas\Identity\Pages\Account\Manage\Email.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Areas\Identity\Pages\Account\Manage\Email.cshtml" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.0.0" />

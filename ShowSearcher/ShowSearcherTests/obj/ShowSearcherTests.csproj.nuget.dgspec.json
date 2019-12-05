@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {}
+    "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {
+    "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
+        "projectUniqueName": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
         "projectName": "ShowSearcherTests",
-        "projectPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
-        "packagesPath": "C:\\Users\\lir7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\obj\\",
+        "projectPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
+        "packagesPath": "C:\\Users\\Skywa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Skywa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
-                "projectPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj"
+              "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
+                "projectPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj"
               }
             }
           }
@@ -81,17 +81,17 @@
         }
       }
     },
-    "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
+    "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
+        "projectUniqueName": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
         "projectName": "ShowSearcher",
-        "projectPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
-        "packagesPath": "C:\\Users\\lir7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\obj\\",
+        "projectPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
+        "packagesPath": "C:\\Users\\Skywa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Skywa\\Desktop\\CSE201\\CSE201_Project\\CSE201_Project\\ShowSearcher\\ShowSearcher\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Skywa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
