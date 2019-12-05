@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {}
+    "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {
+    "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
+        "projectUniqueName": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
         "projectName": "ShowSearcherTests",
-        "projectPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
-        "packagesPath": "C:\\Users\\LOL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\obj\\",
+        "projectPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\ShowSearcherTests.csproj",
+        "packagesPath": "C:\\Users\\lir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcherTests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LOL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\lir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -32,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
-                "projectPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj"
+              "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
+                "projectPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj"
               }
             }
           }
@@ -86,23 +81,18 @@
         }
       }
     },
-    "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
+    "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
+        "projectUniqueName": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
         "projectName": "ShowSearcher",
-        "projectPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
-        "packagesPath": "C:\\Users\\LOL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LOL\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\obj\\",
+        "projectPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\ShowSearcher.csproj",
+        "packagesPath": "C:\\Users\\lir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lir7\\Documents\\GitHub\\CSE201_Project\\ShowSearcher\\ShowSearcher\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LOL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\lir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

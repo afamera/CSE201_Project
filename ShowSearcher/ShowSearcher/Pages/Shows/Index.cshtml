@@ -10,84 +10,85 @@
 }
 
 <h1>ShowSearcher</h1>
-
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-
-<form>
+@if (@User.Identity.Name == "yangt10@miamioh.edu")
+{
     <p>
-        <select asp-for="ShowGenre" asp-items="Model.Genres">
-            <option value="">All</option>
-        </select>
-
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Find" />
+        <a asp-page="Create">Create New</a>
     </p>
-</form>
+}
+    <form>
+        <p>
+            <select asp-for="ShowGenre" asp-items="Model.Genres">
+                <option value="">All</option>
+            </select>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Shows[0].ShowName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Shows[0].ShowRate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Shows[0].NumOfSeasons)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Shows[0].YearShowBegan)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Shows[0].Genre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Shows[0].OriginalNetwork)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Shows)
-        {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShowName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShowRate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumOfSeasons)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.YearShowBegan)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OriginalNetwork)
-            </td>
-            @if (SignInManager.IsSignedIn(User))
-            {
-                <td>
-                    <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
-            }
-            else
-            {
-                <td>
-                    <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                </td>
-            }
+            Title: <input type="text" asp-for="SearchString" />
+            <input type="submit" value="Find" />
+        </p>
+    </form>
 
-        </tr>
-        }
-    </tbody>
-</table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Shows[0].ShowName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Shows[0].ShowRate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Shows[0].NumOfSeasons)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Shows[0].YearShowBegan)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Shows[0].Genre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Shows[0].OriginalNetwork)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Shows)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ShowName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ShowRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumOfSeasons)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.YearShowBegan)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Genre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OriginalNetwork)
+                    </td>
+                    @if (@User.Identity.Name == "yangt10@miamioh.edu")
+                    {
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                        </td>
+                    }
+
+                </tr>
+            }
+        </tbody>
+    </table>

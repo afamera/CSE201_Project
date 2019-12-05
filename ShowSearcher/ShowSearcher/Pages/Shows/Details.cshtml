@@ -73,12 +73,12 @@
             @Html.DisplayNameFor(model => model.Show.WikiLink)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Show.WikiLink)
+           <button type="button" onclick="location.herf=' @Html.DisplayFor(model => model.Show.WikiLink)'">
         </dd>
     </dl>
 </div>
 <div>
-    @if (SignInManager.IsSignedIn(User))
+    @if (@User.Identity.Name=="yangt10@miamioh.edu")
     {
     <td>
         <a asp-page="./Edit" asp-route-id="@Model.Show.ID">Edit</a> |
